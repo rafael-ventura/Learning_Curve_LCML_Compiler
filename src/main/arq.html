@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 class="content_h1" id="header1">1. Principais Conceitos do TDD</h1>
+<h2 class="content_h2" id="header2">1.2 Exercícios de Fixação</h2>
+<div class="content_question" id="question1">
+<p class="content_p" id="p1">1-TDD é uma forma de desenvolvimento em que se deve desenvolver código depois que cada funcionalidade estiver concluída.</p>
+<input type='radio' id='q1_a1' name='q1' value=' '><label for='q1_a1'>Verdadeiro</label><br>
+<input type='radio' id='q1_a2' name='q1' value='*'><label for='q1_a2'>Falso</label><br>
+<br><button onclick='(function (rg) {
+let answers= document.getElementsByName(rg);
+for (let i=0; i<answers.length; i++) if (answers[i].checked && answers[i].value==="*") { alert("Resposta correta!"); return; }
+alert("Resposta incorreta :-(");})("q1");'
+>
+Verificar
+</button>
+</div>
+<div class="content_question" id="question2">
+<p class="content_p" id="p2">2-Selecione a opção correta relacionada a TDD.</p>
+<input type='radio' id='q2_a1' name='q2' value='*'><label for='q2_a1'>Test Driven Development (TDD) é uma forma de desenvolvimento que os testes orientam como o código deve ser desenvolvido. O programador deve fazer os testes de programador utilizando a metáfora do semáforo (TDD Traffic Light) até que o teste passe e depois faça uma refatoração caso haja duplicação ou seja encontrado algum outro problema, como code smells.</label><br>
+<input type='radio' id='q2_a2' name='q2' value=' '><label for='q2_a2'>Test Driven Development (TDD) é uma forma de desenvolvimento que os testes orientam como o código deve ser desenvolvido. Por isso, deve-se fazer testes de unidade logo depois que um trecho do código for concluído.</label><br>
+<input type='radio' id='q2_a3' name='q2' value=' '><label for='q2_a3'>O TDD normalmente é utilizado no SCRUM.</label><br>
+<br><button onclick='(function (rg) {
+let answers= document.getElementsByName(rg);
+for (let i=0; i<answers.length; i++) if (answers[i].checked && answers[i].value==="*") { alert("Resposta correta!"); return; }
+alert("Resposta incorreta :-(");})("q2");'
+>
+Verificar
+</button>
+</div>
+<div class="content_question" id="question3">
+<p class="content_p" id="p3">3-O que significam as luzes amarela, vermelha e verde no TDD Traffic Light, respectivamente?</p>
+<input type='radio' id='q3_a1' name='q3' value=' '><label for='q3_a1'>Erros de compilação, sucesso no teste e falha no teste.</label><br>
+<input type='radio' id='q3_a2' name='q3' value=' '><label for='q3_a2'>Sucesso no teste, falha no teste e erros de compilação.</label><br>
+<input type='radio' id='q3_a3' name='q3' value=' '><label for='q3_a3'>Falha no teste, sucesso no teste e erros de compilação.</label><br>
+<input type='radio' id='q3_a4' name='q3' value='*'><label for='q3_a4'>Erros de compilação, falha no teste e sucesso no teste.</label><br>
+<br><button onclick='(function (rg) {
+let answers= document.getElementsByName(rg);
+for (let i=0; i<answers.length; i++) if (answers[i].checked && answers[i].value==="*") { alert("Resposta correta!"); return; }
+alert("Resposta incorreta :-(");})("q3");'
+>
+Verificar
+</button>
+</div>
+<div class="content_question" id="question4">
+<p class="content_p" id="p4">4-Selecione a opção que melhor define o que é refatoração:</p>
+<input type='radio' id='q4_a1' name='q4' value=' '><label for='q4_a1'>Alterar o resultado do código, porque ele é indesejado.</label><br>
+<input type='radio' id='q4_a2' name='q4' value=' '><label for='q4_a2'>Modificar o código para que fique mais organizado, mesmo que isso não melhore a performance.</label><br>
+<input type='radio' id='q4_a3' name='q4' value='*'><label for='q4_a3'>Alterar a lógica do código sem alterar o seu resultado, com o objetivo de melhorá-lo.</label><br>
+<input type='radio' id='q4_a4' name='q4' value=' '><label for='q4_a4'>Dividir um pedaço de código em partes menores.</label><br>
+<br><button onclick='(function (rg) {
+let answers= document.getElementsByName(rg);
+for (let i=0; i<answers.length; i++) if (answers[i].checked && answers[i].value==="*") { alert("Resposta correta!"); return; }
+alert("Resposta incorreta :-(");})("q4");'
+>
+Verificar
+</button>
+</div>
+<div class="content_question" id="question5">
+<p class="content_p" id="p5">5-Marque o único caso que <b>NÃO</b> corresponde aos principais casos em que é necessário fazer refatoração:</p>
+<input type='radio' id='q5_a1' name='q5' value=' '><label for='q5_a1'>Duplicação.</label><br>
+<input type='radio' id='q5_a2' name='q5' value='*'><label for='q5_a2'>Código que segue fielmente as regras do SOLID.</label><br>
+<input type='radio' id='q5_a3' name='q5' value=' '><label for='q5_a3'>Código e/ou seu objetivo não está claro.</label><br>
+<input type='radio' id='q5_a4' name='q5' value=' '><label for='q5_a4'>Code Smells (indícios de que há algo errado no código).</label><br>
+<br><button onclick='(function (rg) {
+let answers= document.getElementsByName(rg);
+for (let i=0; i<answers.length; i++) if (answers[i].checked && answers[i].value==="*") { alert("Resposta correta!"); return; }
+alert("Resposta incorreta :-(");})("q5");'
+>
+Verificar
+</button>
+</div>
+
+</body>
+</html>
