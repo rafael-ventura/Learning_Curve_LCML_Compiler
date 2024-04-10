@@ -138,9 +138,7 @@ public class Parser {
             translator.translate(tokens, output, jsonErrorListener);
         }
 
-        System.out.println("Erros de compilação: " + errorCounter);
-        System.out.println("Erros na lista de json: " + jsonErrorListener.getErrors().size());
-        // Verifica se houve erros durante a compilação
+        // Se houve erro, chama o método para salvar os erros em um arquivo JSON
         if (errorCounter > 0) {
             // Chama o método printErrors para processar e gravar os erros
             loadErrors();
@@ -626,6 +624,7 @@ public class Parser {
      */
     public void loadErrors() {
         System.out.println("Erros de compilação:");
+        //Verific se o listener de erros JSON foi preenchido com os erros
         if (!jsonErrorListener.getErrors().isEmpty()) {
             String jsonErrors = jsonErrorListener.toJson();
             try (PrintStream out = new PrintStream(new File("errors.json"))) {
@@ -633,7 +632,6 @@ public class Parser {
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
             }
-
 
             System.out.println("Erros de compilação salvos em compilation_errors.json.");
         }
