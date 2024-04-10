@@ -1,0 +1,20 @@
+#1 Cabeçalhos
+
+#1 1. TDD
+#2 1.1 Conceitos de TDD
+#3 1.1.1 Teste Unitário
+
+#1 Codigos
+
+#code
+x = x + 2;
+#code
+
+#code
+public static String getString(String key) {
+return rb != null ? rb.getString(key) : key;
+}
+#code
+
+# code code code
+# code code code1

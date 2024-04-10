@@ -1,16 +1,19 @@
 package compiler;
 
 import java.util.List;
+
 import compiler.adapter.ErrorListener;
 
 public class SemanticAnalyser {
     private int errorCounter = 0;
     private ErrorListener errorListener;
+    private ErrorListener jsonErrorListener;
     private int correctAnswerCounter = 0;
     private int optionCounter = 0;
 
     private void addError(String mensagem) {
         this.errorListener.semanticError(mensagem);
+        this.jsonErrorListener.semanticError(mensagem);
         this.errorCounter++;
     }
 
@@ -20,13 +23,14 @@ public class SemanticAnalyser {
      * Questão, até o momento, possui condições que apesar de não serem erradas do
      * ponto de vista sintático, não fazem
      * sentido do ponto de vista semântico.
-     * 
+     *
      * @param syntax
      * @param errorListener
      * @return errorCounter
      */
-    public int analyse(List<TokenNode> syntax, ErrorListener errorListener) {
+    public int analyse(List<TokenNode> syntax, ErrorListener errorListener, ErrorListener jsonErrorListener) {
         this.errorListener = errorListener;
+        this.jsonErrorListener = jsonErrorListener;
 
         for (int i = 0; i < syntax.size(); i++) {
             switch (syntax.get(i).type()) {

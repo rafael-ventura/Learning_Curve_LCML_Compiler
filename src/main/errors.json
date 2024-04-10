@@ -1,0 +1,12 @@
+[
+  {
+    "errorMessage": "Invalid line type",
+    "lineContent": "# code code code",
+    "lineNumber": 19
+  },
+  {
+    "errorMessage": "Invalid line type",
+    "lineContent": "# code code code1",
+    "lineNumber": 20
+  }
+]
