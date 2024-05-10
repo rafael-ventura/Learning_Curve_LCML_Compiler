@@ -1,0 +1,38 @@
+package com.learningcurve.compiler;
+
+/**
+ * Tipo enumerado com todos os comandos da linguagem
+ */
+public enum TokenType {
+
+	HEADER1,
+	HEADER2,
+	HEADER3,
+	IMAGE,
+	VIDEO,
+	BEGIN_SOURCE,
+	END_SOURCE,
+	SOURCE_CODE,
+	BEGIN_LIST,
+	END_LIST,
+	LIST_ITEM,
+	BEGIN_CONCEPTS,
+	END_CONCEPTS,
+	CONCEPT,
+	BEGIN_TABLE,
+	END_TABLE,
+	TABLE_ROW,
+	BEGIN_SCENARIO,
+	END_SCENARIO,
+	STEP,
+	BEGIN_QUESTION,
+	END_QUESTION,
+	ANSWER,
+	TEXT,
+	BREAK,
+	BEGIN_PARAGRAPH,
+	END_PARAGRAPH,
+	EMPTY_LINE,
+	INVALID,
+	EOF,
+}

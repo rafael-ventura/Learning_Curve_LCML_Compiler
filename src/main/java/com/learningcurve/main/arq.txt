@@ -1,0 +1,44 @@
+#1 1. Principais Conceitos do TDD
+#2 1.2 Exercícios de Fixação
+#question
+1-TDD é uma forma de desenvolvimento em que se deve desenvolver código depois que cada funcionalidade estiver concluída.
+  
+()Verdadeiro
+(*)Falso
+#question
+
+#question
+2-Selecione a opção correta relacionada a TDD.
+  
+(*)Test Driven Development (TDD) é uma forma de desenvolvimento que os testes orientam como o código deve ser desenvolvido. O programador deve fazer os testes de programador utilizando a metáfora do semáforo (TDD Traffic Light) até que o teste passe e depois faça uma refatoração caso haja duplicação ou seja encontrado algum outro problema, como code smells.
+()Test Driven Development (TDD) é uma forma de desenvolvimento que os testes orientam como o código deve ser desenvolvido. Por isso, deve-se fazer testes de unidade logo depois que um trecho do código for concluído.
+()O TDD normalmente é utilizado no SCRUM.
+#question
+
+#question
+3-O que significam as luzes amarela, vermelha e verde no TDD Traffic Light, respectivamente?
+
+()Erros de compilação, sucesso no teste e falha no teste.
+()Sucesso no teste, falha no teste e erros de compilação.
+()Falha no teste, sucesso no teste e erros de compilação.
+(*)Erros de compilação, falha no teste e sucesso no teste.
+#question
+
+#question
+4-Selecione a opção que melhor define o que é refatoração:
+
+()Alterar o resultado do código, porque ele é indesejado.
+()Modificar o código para que fique mais organizado, mesmo que isso não melhore a performance.
+(*)Alterar a lógica do código sem alterar o seu resultado, com o objetivo de melhorá-lo.
+()Dividir um pedaço de código em partes menores.
+#question
+
+#question
+5-Marque o único caso que **NÃO** corresponde aos principais casos em que é necessário fazer refatoração:
+
+()Duplicação.
+(*)Código que segue fielmente as regras do SOLID.
+()Código e/ou seu objetivo não está claro.
+()Code Smells (indícios de que há algo errado no código).
+#question
+
